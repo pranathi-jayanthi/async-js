@@ -40,7 +40,7 @@ const func = async () => {
     const a = await fetch('https://jsonplaceholder.typicode.com/todos');
 
     if(a.status != 200){
-        
+        console.log('Error fetching data');
     }
 
     const b = await a.json();
